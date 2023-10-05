@@ -1,5 +1,6 @@
 package com.learn.awsspringlearn.domain.posts;
 
+import com.learn.awsspringlearn.domain.BaseTimeEntity;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -8,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor  // 기본 생성자 자동 추가. public Posts() {}
 @Entity             // 테이블과 링크될 클래스임을 나타냄
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id     // PK 필드임을 나타냅니다.
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 생성 규칙을 나타내는 것으로 IDENTITY는 auto_increment
     private Long id;
