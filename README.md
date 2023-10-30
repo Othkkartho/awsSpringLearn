@@ -18,3 +18,5 @@
 - Gradle : 8.2.1
 - Spring Security + OAuth2.0
 - Thymeleaf
+
+#### 실제 실행화면은 해당 저장소의 [Wiki](https://github.com/Othkkartho/awsSpringLearn.wiki.git)에 있습니다.
